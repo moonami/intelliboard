@@ -61,15 +61,15 @@ function getUserDetails()
     }
 	$browser        =   "Unknown Browser";
     $browser_array  =   array(
-                            '/msie/i'       =>  'Internet Explorer',
-                            '/firefox/i'    =>  'Firefox',
-                            '/safari/i'     =>  'Safari',
-                            '/chrome/i'     =>  'Chrome',
-                            '/opera/i'      =>  'Opera',
-                            '/netscape/i'   =>  'Netscape',
-                            '/maxthon/i'    =>  'Maxthon',
-                            '/konqueror/i'  =>  'Konqueror',
-                            '/mobile/i'     =>  'Mobile browser'
+                            '/msie|trident/i'   =>  'Internet Explorer',
+                            '/firefox/i'        =>  'Firefox',
+                            '/safari/i'         =>  'Safari',
+                            '/chrome/i'         =>  'Chrome',
+                            '/opera/i'          =>  'Opera',
+                            '/netscape/i'       =>  'Netscape',
+                            '/maxthon/i'        =>  'Maxthon',
+                            '/konqueror/i'      =>  'Konqueror',
+                            '/mobile/i'         =>  'Mobile browser'
                         );
     foreach ($browser_array as $regex => $value) {
         if (preg_match($regex, $user_agent)) {
