@@ -62,10 +62,10 @@ function getUserDetails()
     }
 	$browser        =   "Unknown Browser";
     $browser_array  =   array(
-                            '/msie|trident/i'   =>  'Internet Explorer',
                             '/firefox/i'        =>  'Firefox',
                             '/safari/i'         =>  'Safari',
                             '/chrome/i'         =>  'Chrome',
+                            '/msie|trident/i'   =>  'Internet Explorer',
                             '/edge/i'           =>  'Microsoft Edge',
                             '/opera/i'          =>  'Opera',
                             '/netscape/i'       =>  'Netscape',
